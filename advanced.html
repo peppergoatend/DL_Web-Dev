@@ -3,21 +3,48 @@
     <head>
         <title> Advanced HTML Notes</title>
         <meta charset="UTF-8">
+        <style>
+            /*Cascading Style Sheets (CSS)
+            1. Selector
+            2. Declaration
+                a. Property
+                b. Value
+            */
+            body{
+                color:blue; background:crimson
+            }
+            h1{
+                color:ivory; text-decoration:underline; text-align: center; background-color: rgba(10,10.91,40);
+                border-radius: 5px; width: 75%; border:dotted 2px orange;
+            }
+            #even{
+                color:rgb(16, 55, 119)
+            }
+            .numbered{font-size: 20px}
+            #winter{
+                width:50%
+            }
+            #fall{
+                width:500px
+            }
+
+        </style>
     </head>
     <body>
         <h1>Advanced HTML Notes</h1>
         <h3>Lists:</h3>
         <div>
-        <ol type="a"> <!--This is a numbered list!-->
+        <ol type="i"
+        class="numbered"> <!--This is a numbered list!-->
             <li>This is the first thing</li>
-            <li>This is the second</li>
+            <li id="even">This is the second</li>
             <li>This is the third</li>
         </ol>
         <ul> <!--This is a bulletted list-->
             <li><a href="https://usapple.org/apple-varieties" target="_blank">Apple</a></li>
-            <li>Banana</li>
+            <li id="even">Banana</li>
             <li>Orange</li>
-            <li>Kiwi</li>
+            <li id="even">Kiwi</li>
         </ul>
         <dl>
             <dt>Fall</dt>
@@ -30,9 +57,9 @@
         </dl>
 
         <h3>Attributes:</h3>
-        <img src="https://globalsummitguide.com/wp-content/uploads/2026/07/AdobeStock_1146206325-scaled.jpeg" alt="Mount Timp" width="200px">
+        <img src="https://globalsummitguide.com/wp-content/uploads/2026/07/AdobeStock_1146206325-scaled.jpeg" alt="Mount Timp" id="fall">
         <br>
-        <img src="Notes\Mount_Timpanogos_at_sunset.jpg" alt="Sunset on Timp" width="200px">
+        <img src="Notes\Mount_Timpanogos_at_sunset.jpg" alt="Sunset on Timp" id="winter">
         <p>Image from <a href="https://commons.wikimedia.org/wiki/File:Mount_Timpanogos_at_sunset.jpg" target="_blank">Wikimedia Commons</a></p>
     </div>
 
