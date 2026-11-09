@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            button{
+                padding:20px;
+                margin: 8px;
+                margin-left: 50px;
+            }
+            #box{
+                width: 75px;
+                height: 75px;
+                background-color:blue;
+                color: azure;
+                text-align: center;
+                margin: 0 auto;
+            }
+            #box-wrapper{
+                display: grid;
+                grid-template-columns: 1fr 200px 1fr;
+                gap: 5px;
+            }
+            #flex-wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap
+            }
+        </style>
+    </head>
+   <body>
+        <h1>Alignment Notes</h1>
+        <div id="box-wrapper">
+            <div id="box">
+                <p>Box 1</p>
+            </div>
+            <div id="box">
+                <p>Box 2</p>
+            </div>
+            <div id="box">
+                <p>Box 3</p>
+            </div>
+            <div id="box">
+                <p>Box 4</p>
+            </div>
+        </div>
+        <div id="flex-wrapper">
+            <div id="box">
+                <p>Box 1</p>
+            </div>
+            <div id="box">
+                <p>Box 2</p>
+            </div>
+            <div id="box">
+                <p>Box 3</p>
+            </div>
+            <div id="box">
+                <p>Box 4</p>
+            </div>
+        </div>
+        <button>Click me</button>
+   </body> 
+</hmtl>
