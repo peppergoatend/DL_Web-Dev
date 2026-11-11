@@ -12,9 +12,6 @@
                 font-family:'Times New Roman', Times, serif; 
                 margin:0;
                 padding:25px;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                align-items: start;
 
             }
             h1{
@@ -40,10 +37,12 @@
           
             }
             #gallery {
-                text-align: center;
-                display: flex;
-                flex-direction: column;
+               text-align: center;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
                 align-items: center;
+                gap: 15px;
             }
             #text-wrapper{
                 background-color: rgb(229,229,202);
@@ -67,9 +66,9 @@
         <br>
         <div id="gallery">
             <h3>Gallery</h3>
-            <img src="unikari.jpg" alt="The Riddler" id="image" style="border-radius: 8px; border:double 10px">
+            <img src="unikari.jpg" alt="The Riddler" class="image" style="border-radius: 8px; border:double 10px">
             <h4>Credits to @unikari</h4>
-            <img src="wh3or.jpg" alt="Ed Nygma & his alter ego" id="image"  style="border-radius: 8px; border:double 10px">
+            <img src="wh3or.jpg" alt="Ed Nygma & his alter ego" class="image"  style="border-radius: 8px; border:double 10px">
             <h4>Credits to @wh3or?</h4>
         </div>
         <br>
