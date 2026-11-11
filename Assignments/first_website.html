@@ -7,19 +7,53 @@
         <meta charset="UTF-8">
         <style>
             body{
-                color:rgb(61,65,40); background-color:rgb(217,217,183);
+                color:rgb(61,65,40);
+                background-color:rgb(217,217,183);
+                font-family:'Times New Roman', Times, serif; 
+                margin:0;
+                padding:25px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: start;
+
             }
             h1{
-                color:rgb(61,65,40);text-align: center; background-color:rgb(149,152,103);
-                border-radius: 5px; width: 75%; border:double 10px;
+                color:rgb(61,65,40);
+                text-align: center;
+                background-color:rgb(149,152,103);
+                border-radius: 5px;
+                width: 75%;
+                border:double 10px; 
+                padding:15px; 
+                margin:20px auto;
             }
-            #riddler{
-                width:200px
+            p{
+                margin: 15px
+
+            }
+            .image{
+                width:200px;
+                height: auto;
+                border-radius: 8px;
+                border: double 10px;
+                margin: 10px;
+          
+            }
+            #gallery {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            #text-wrapper{
+                background-color: rgb(229,229,202);
+                padding: 20px;
+                border-radius: 8px;
             }
         </style>
     </head>
     <body>
-        <div>
+        <div id="text-wrapper">
         <h1>Thoughts on Gotham's Riddler?</h1>
         <p><b>The Riddler</b> is one of the most interesting villains in the Batman universe, not simply because of his intelligence, but because of the way he views the world.<br> What makes him so fascinating to me is the psychology behind his actions, his obsession with being recognized, and the way he uses riddles to demonstrate his intelligence and superiority.</p>
         <h2>My Personal Opinion</h2>
@@ -31,11 +65,11 @@
         <p>Edward Nygma aka The Riddler, is portrayed by Cory Michael Smith in the television series <i>Gotham (2014)</i>. He plays the role of an enigmatic character who is desperate for his intelligence to be recognized by people. Throughout the series, we get to see different sides of his personality, from his initially awkward and reserved nature to his gradual transformation into a much darker individual. He's interesting because of the complexity of his character and the psychological factors that influence his decisions and behavior.</p>
         <p>Here is a website that goes more into depth about Edward Nygma! <a href = "https://gotham.fandom.com/wiki/Edward_Nygma" target="_blank">https://gotham.fandom.com/wiki/Edward_Nygma</a></p>
         <br>
-        <div>
+        <div id="gallery">
             <h3>Gallery</h3>
-            <img src="unikari.jpg" alt="The Riddler" id="riddler" style="border-radius: 8px; border:double 10px">
+            <img src="unikari.jpg" alt="The Riddler" id="image" style="border-radius: 8px; border:double 10px">
             <h4>Credits to @unikari</h4>
-            <img src="wh3or.jpg" alt="Ed Nygma & his alter ego" id="riddler"  style="border-radius: 8px; border:double 10px">
+            <img src="wh3or.jpg" alt="Ed Nygma & his alter ego" id="image"  style="border-radius: 8px; border:double 10px">
             <h4>Credits to @wh3or?</h4>
         </div>
         <br>
