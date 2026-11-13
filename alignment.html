@@ -27,14 +27,14 @@
                 justify-content:space-between;
                 flex-wrap: wrap;
             }
-            #showMore{
-
-
+            #duck{
+                width: 150px
             }
         </style>
     </head>
     <body>
         <h1>Alignment Notes</h1>
+        <img src="https://m.media-amazon.com/images/I/51zj25MxeiL.jpg" alt="duck" id="duck" onmouseout="changeImage()">
         <div id="box-wrapper">
             <div id="box" onmouseover="disappear()" onmouseout="appear()">
                 <p>Box 1</p>
@@ -69,6 +69,15 @@
             <button id="showMore" onClick="show()">Show More</button>
             <script>
                 //makes the webpage interactive
+                let images =["https://www.toysmith.com/cdn/shop/products/1470_1bigbathduck.jpg?v=1756916337", "https://cdn11.bigcommerce.com/s-nf2x4/images/stencil/1280x1280/products/884/9637/Turquoise-Blue-Rubber-Duck-Adline-7__79869.1668806323.jpg?c=2", "https://www.shipducky.com/cdn/shop/products/Instagrampost-1a.jpg?v=1660097941", "https://m.media-amazon.com/images/I/51zj25MxeiL.jpg"]
+                let current = 0
+                function changeImage(){
+                    current += 1
+                    if (current > 3){
+                        current = 0
+                    }
+                    document.getElementById("duck").src = images[current]
+                }
                 function color(){
                     let newColor = document.getElementById("colorPicker").value
                     document.getElementById("box").style.backgroundColor = newColor
