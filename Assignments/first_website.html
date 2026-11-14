@@ -51,7 +51,7 @@
                 padding: 20px;
                 border-radius: 8px;
             }
-            #duck{
+            #chokers{
                 width: 150px
             }
         </style>
@@ -71,7 +71,10 @@
             <p>Here is a website that goes more into depth about Edward Nygma! <a href = "https://gotham.fandom.com/wiki/Edward_Nygma" target="_blank">https://gotham.fandom.com/wiki/Edward_Nygma</a></p>
         </div>
         <br>
-        <img src="https://m.media-amazon.com/images/I/51zj25MxeiL.jpg" alt="duck" id="duck" onmouseout="changeImage()">
+        <div>
+            <p>My favorite types of chokers!</p>
+            <img src="https://i.pinimg.com/1200x/7a/46/fa/7a46fae3214e2caaa061ec77d19369e4.jpg" alt="choker" id="chokers" onmouseout="changeImage()">
+        </div>
         <br>
         <div id="gallery">
             <h3>Gallery</h3>
@@ -103,36 +106,31 @@
                 <li>Antisocial personality disorder (ASPD)</li>
             </ul>
         </div>
-        <div id="extra" onmouseover="disappear()" onmouseout="appear()">
-            <p>Soosod</p>
-            <img src="">
+        <div id="extra" style="display:none;">
+            <p>Did you know?: Nygmobblepot (Nygma + Cobblepot) day was made official in the Gotham community by Cory Michael Smith on February 9th.</p>
+            <img src="https://i.pinimg.com/736x/b3/18/cc/b318cc86f2601a29627a228512a171e6.jpg" alt="bugs when you lift up a rock">
+            <p>By @redstvrxx on Pinterest</p>
         </div>
-        <button id="showMore" onClick="show()">Show More</button>
+        <button id="showMore" onClick="show()">Lift up rock</button>
         <script>
-            let images =["https://www.toysmith.com/cdn/shop/products/1470_1bigbathduck.jpg?v=1756916337", "https://cdn11.bigcommerce.com/s-nf2x4/images/stencil/1280x1280/products/884/9637/Turquoise-Blue-Rubber-Duck-Adline-7__79869.1668806323.jpg?c=2", "https://www.shipducky.com/cdn/shop/products/Instagrampost-1a.jpg?v=1660097941", "https://m.media-amazon.com/images/I/51zj25MxeiL.jpg"]
+            let images =["https://i.pinimg.com/1200x/7a/46/fa/7a46fae3214e2caaa061ec77d19369e4.jpg", "https://i.pinimg.com/736x/98/bd/16/98bd16fa72d0f950367173feff4f7388.jpg", "https://i.pinimg.com/1200x/fa/0d/7c/fa0d7c737e2b47a168baff2ddbb32322.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEAsn1DS4SUxbuYHU0ksbpvbd9Le7LszwEOZSOSNELLg&s=10"]
             let current = 0
             function changeImage(){
                 current += 1
                 if (current > 3){
                     current = 0
                 }
-                document.getElementById("duck").src = images[current]
-            }
-            function disappear(){
-                document.getElementById("box2").style.display = 'none'
-            }
-            function appear(){
-                document.getElementById("box2").style.display = 'block'
+                document.getElementById("chokers").src = images[current]
             }
             function show(){
                 let element = document.getElementById("extra")
-                if (element.style.display == "flex"){
-                    element.style.display = "none"
-                    document.getElementById("showMore").innerHTML = "show More"
-                }else{
-                    element.style.display = "flex"
-                    document.getElementById("showMore").innerHTML = "Show Less"
-                }
+                    if (element.style.display == "none"){
+                        element.style.display = "block"
+                            document.getElementById("showMore").innerHTML = "Put back rock"
+                    }else{
+                        element.style.display = "none"
+                            document.getElementById("showMore").innerHTML = "Lift up rock"
+                    }
             }
         </script>
     </body>
