@@ -70,25 +70,21 @@
             <p>Edward Nygma aka The Riddler, is portrayed by Cory Michael Smith in the television series <i>Gotham (2014)</i>. He plays the role of an enigmatic character who is desperate for his intelligence to be recognized by people. Throughout the series, we get to see different sides of his personality, from his initially awkward and reserved nature to his gradual transformation into a much darker individual. He's interesting because of the complexity of his character and the psychological factors that influence his decisions and behavior.</p>
             <p>Here is a website that goes more into depth about Edward Nygma! <a href = "https://gotham.fandom.com/wiki/Edward_Nygma" target="_blank">https://gotham.fandom.com/wiki/Edward_Nygma</a></p>
         </div>
-        <br>
         <div>
             <p>My favorite types of chokers!</p>
             <h5>(This is included because Ed Nygma has a habit of grabbing people by the neck)</h5>
-            <img src="https://i.pinimg.com/1200x/7a/46/fa/7a46fae3214e2caaa061ec77d19369e4.jpg" alt="choker" id="choker" onmouseout="changeImage()">
+           <img src="https://i.pinimg.com/1200x/7a/46/fa/7a46fae3214e2caaa061ec77d19369e4.jpg" alt="choker" id="choker" onmouseover="changeImage()">
         </div>
-        <br>
         <div id="gallery">
             <h3>Gallery</h3>
             <div>
-                <img src="unikari.jpg" alt="The Riddler" class="image" style="border-radius: 8px; border:double 10px">
+                <img src="unikari.jpg" alt="The Riddler" class="image">
                 <h4>Credits to @unikari</h4>
             </div>
             <div>
-                <img src="wh3or.jpg" alt="Ed Nygma & his alter ego" class="image"  style="border-radius: 8px; border:double 10px">
-                <h4>Credits to @wh3or?</h4>
+                <img src="wh3or.jpg" alt="Ed Nygma & his alter ego" class="image">
             </div>
         </div>
-        <br>
         <div id="intro">
             <h2>Information</h2>
             <dl>
@@ -101,7 +97,7 @@
             </dl>
             <ul>
                 <li>Autism spectrum disorder (ASD)</li>
-                <li>Obsessive-compulSsive disorder (OCD)</li>
+                <li>Obsessive-compulsive disorder (OCD)</li>
                 <li>Dissociative identity disorder (DID)</li>
                 <li>Narcissistic personality disorder (NPD)</li>
                 <li>Antisocial personality disorder (ASPD)</li>
@@ -112,9 +108,9 @@
             <img src="https://i.pinimg.com/736x/b3/18/cc/b318cc86f2601a29627a228512a171e6.jpg" alt="bugs when you lift up a rock">
             <p>By @redstvrxx on Pinterest</p>
         </div>
-        <button id="extra" onClick="show()">Lift up rock</button>
+        <button id="rockButton" onclick="show()">Lift up rock</button>
         <script>
-            let images =["https://i.pinimg.com/1200x/7a/46/fa/7a46fae3214e2caaa061ec77d19369e4.jpg", "https://i.pinimg.com/736x/98/bd/16/98bd16fa72d0f950367173feff4f7388.jpg", "https://i.pinimg.com/1200x/fa/0d/7c/fa0d7c737e2b47a168baff2ddbb32322.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEAsn1DS4SUxbuYHU0ksbpvbd9Le7LszwEOZSOSNELLg&s=10"]
+            let images =["1", "2", "3", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEAsn1DS4SUxbuYHU0ksbpvbd9Le7LszwEOZSOSNELLg&s=10"]
             let current = 0
             function changeImage(){
                 current += 1
@@ -123,16 +119,17 @@
                 }
                 document.getElementById("choker").src = images[current]
             }
-            function show(){
-                let element = document.getElementById("extra")
-                    if (element.style.display == "none"){
-                        element.style.display = "block"
-                            document.getElementById("extra").innerHTML = "Put back rock"
-                    }else{
-                        element.style.display = "none"
-                            document.getElementById("extra").innerHTML = "Lift up rock"
-                    }
-            }
+           function show(){
+               let element = document.getElementById("extra")
+                   let button = document.getElementById("rockButton")
+                       if (element.style.display == "none"){
+                           element.style.display = "block"
+                               button.innerHTML = "Put back rock"
+                       }else{
+                           element.style.display = "none"
+                               button.innerHTML = "Lift up rock"
+                       }
+           }
         </script>
     </body>
     </html>
