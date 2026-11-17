@@ -12,23 +12,55 @@
                 font-family:'Arial';
                 margin:0;
                 padding:25px;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
+                display:grid;
                 align-items: start;
-
             }
             h1{
                 color:#243B53;
                 text-align: center;
+                width:75%;
+                background-color:#B9DCEB;
+                border-radius: 5px;
+                border:10px; 
+                padding:15px; 
+                margin:20px auto;
+               
+            }
+            .header{
+                color:#476653;
                 width: 75%;
                
+            }
+            .image{
+                width: 200px;
+                margin: 10px;
             }
             </style>
     </head>
     <body>
         <h1>Park City, Utah</h1>
-        <p>This is a basic paragraph. This is used to write the bulk of what is on your webpage.</p>
-        <h2>This is a subheader</h2>
-        <p> Paragraphs get put on their own line, just like a new paragraph in <br> English.</p>
+        <div id="text-wrapper">
+            <h2 class="header">About</h2>
+            <p>Park City is a beautiful place in Utah located in the mountains. It is known for world class skiing resorts, the Sundance Film Festival, and Historic Main Street. Many people visit Park City to ski, snowboard, shop, and enjoy the outdoors. It is a great place to visit because there are many fun things to do for people of all ages.</p>
+        </div>
+        <div>
+        <h3 class="header">Things to do at Park city:</h3>
+        <dl>
+            <dt><b>Skiing and Snowboarding:</b></dt>
+            <dd>Park City has great ski resorts where people can ski and snowboard.</dd>
+            <dt><b>Historic Main Street:</b></dt>
+            <dd>Main Street has many fun shops, restaurants, and places to explore.</dd>
+            <dt><b>Outdoor Activities:</b></dt>
+            <dd>People can enjoy hiking, biking, fishing, and other outdoor adventures.</dd>
+            <dt><b>Sundance Film Festival:</b><dt>
+                <dd>Park City has been known for hosting the famous Sundance Film Festival, attracting filmmakers and visitors from around the world.</dd>
+        </dl>
+        </div>
+        <div>
+            <img src="https://ctfassets.ksldigital.com/0wjmk6wgfops/4NvEOmLJWFWPDxwWXZg8sh/f6a757230e14e07260d783c5b4380ac7/benjamin_rascoe_YAEbroWeHCM_unsplash_244835e7-e551-4c5d-a46c-8ad87f9aa25e.jpg?q=70" alt="Park city" class="image">
+            <img src="https://ctfassets.ksldigital.com/0wjmk6wgfops/54nPSpvgNALDXcj2T9IqYC/3b0cd7df18515574e103b6987fee083b/olivia_hutcherson_0_Wjcr3j8CU_unsplash_804e9f8b-95d5-4595-bea3-e0b8187a9e4c.jpg?q=70" alt="Main Street Park city" class="image">
+            <img src="https://images.ctfassets.net/0wjmk6wgfops/551cYIf1LnxrAq1kGGNn7w/b0daedc8e631b42f8b4e54bdf58caf13/AdobeStock_353655804.jpeg?w=1200&h=630&f=center&fit=fill" class="image">
+            <p>Images from <a href="https://www.utah.com/" target="_blank">Utah.com</a></p>
+        </div>
     </body>
 </html>
