@@ -21,7 +21,7 @@
                 width:75%;
                 background-color:#B9DCEB;
                 border-radius: 5px;
-                border:10px; 
+                border: ridge 10px; 
                 padding:15px; 
                 margin:20px auto;
                
@@ -44,7 +44,7 @@
             <p>Park City is a beautiful place in Utah located in the mountains. It is known for world class skiing resorts, the Sundance Film Festival, and Historic Main Street. Many people visit Park City to ski, snowboard, shop, and enjoy the outdoors. It is a great place to visit because there are many fun things to do for people of all ages.</p>
         </div>
         <div>
-        <h3 class="header">Things to do at Park city:</h3>
+        <h3 class="header">REASONS TO GO:</h3>
         <dl>
             <dt><b>Skiing and Snowboarding:</b></dt>
             <dd>Park City has great ski resorts where people can ski and snowboard.</dd>
@@ -54,13 +54,45 @@
             <dd>People can enjoy hiking, biking, fishing, and other outdoor adventures.</dd>
             <dt><b>Sundance Film Festival:</b><dt>
                 <dd>Park City has been known for hosting the famous Sundance Film Festival, attracting filmmakers and visitors from around the world.</dd>
+            </dt>
+        </d/>
         </dl>
         </div>
         <div>
             <img src="https://ctfassets.ksldigital.com/0wjmk6wgfops/4NvEOmLJWFWPDxwWXZg8sh/f6a757230e14e07260d783c5b4380ac7/benjamin_rascoe_YAEbroWeHCM_unsplash_244835e7-e551-4c5d-a46c-8ad87f9aa25e.jpg?q=70" alt="Park city" class="image">
             <img src="https://ctfassets.ksldigital.com/0wjmk6wgfops/54nPSpvgNALDXcj2T9IqYC/3b0cd7df18515574e103b6987fee083b/olivia_hutcherson_0_Wjcr3j8CU_unsplash_804e9f8b-95d5-4595-bea3-e0b8187a9e4c.jpg?q=70" alt="Main Street Park city" class="image">
-            <img src="https://images.ctfassets.net/0wjmk6wgfops/551cYIf1LnxrAq1kGGNn7w/b0daedc8e631b42f8b4e54bdf58caf13/AdobeStock_353655804.jpeg?w=1200&h=630&f=center&fit=fill" class="image">
+            <img src="https://images.ctfassets.net/0wjmk6wgfops/551cYIf1LnxrAq1kGGNn7w/b0daedc8e631b42f8b4e54bdf58caf13/AdobeStock_353655804.jpeg?w=1200&h=630&f=center&fit=fill" class="image" id="camp" onmouseover="changeImage()">
             <p>Images from <a href="https://www.utah.com/" target="_blank">Utah.com</a></p>
         </div>
+        <div id="extra" style="display:none;">
+            <p><b>Did you know?:</b> In the 1950s and 60s, Park City changed from a mining town into a popular recreation destination. During this time, the national state and local initated made efforts to protect and preserve its historic buildings.
+                <br><br>
+                Today, Park City has over 400 historic sites and two National Register Historic Districts, keeping its history alive for future generations.</p>
+            <img src="https://insideparkcityrealestate.com/wp-content/uploads/2016/10/Miners-Hospital.jpg" alt="Historic building" class="center-image">
+            <p>Image source: <a href="https://insideparkcityrealestate.com/20-fun-facts-about-park-city/" target="_blank">20 Fun Facts About Park City</a></p>
+        </div>
+        <button id="Button" onclick="show()">Fun Fact</button>
+        <script>
+            let images =["https://images.ctfassets.net/0wjmk6wgfops/551cYIf1LnxrAq1kGGNn7w/b0daedc8e631b42f8b4e54bdf58caf13/AdobeStock_353655804.jpeg?w=1200&h=630&f=center&fit=fill", "https://ctfassets.ksldigital.com/0wjmk6wgfops/7ztjqKfRa3mICxlLqBiYh3/589d2ee391256946f5bd25970cda58d9/Yurt.jpeg?w=1280&h=800&fit=fill&f=center&q=80&fm=webp"]
+            let current = 0
+            function changeImage(){
+                current += 1
+                if (current > 1){
+                    current = 0
+                }
+                document.getElementById("camp").src = images[current]
+            }
+           function show(){
+               let element = document.getElementById("extra")
+                   let button = document.getElementById("Button")
+                       if (element.style.display == "none"){
+                           element.style.display = "block"
+                               button.innerHTML = "Close"
+                       }else{
+                           element.style.display = "none"
+                               button.innerHTML = "Fun Fact"
+                       }
+           }
+        </script>
     </body>
 </html>
